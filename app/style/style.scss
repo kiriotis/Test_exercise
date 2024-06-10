@@ -1,3 +1,103 @@
-html {
-  background: red;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+main {
+  .Container {
+    .BannerMain {
+      height: 455px;
+      display: flex;
+      flex-direction: row;
+      margin: 36px;
+      background-color: #ebf0fa;
+      border-radius: 20px;
+      @media (max-width: 1300px) {
+        margin: 24px;
+        flex-direction: column;
+        height: auto;
+      }
+      .BannerMainLeft {
+        margin: 72px 0px;
+        padding-top: 35px;
+        box-sizing: border-box;
+        width: 50%;
+        @media (max-width: 1300px) {
+          padding-top: 0px;
+          margin: 0px;
+          width: 100%;
+        }
+        .BannerMainLeftHero {
+          padding-left: 75px;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          align-items: flex-start;
+          @media (max-width: 1300px) {
+            margin: 20px;
+            padding-left: 0px;
+            width: 100%;
+          }
+          .BannerMainLeftHeroTitle {
+            font-family: Manrope, sans-serif;
+            color: #294b8a;
+            font-size: 30px;
+          }
+
+          .BannerMainLeftHeroText {
+            font-family: Manrope, sans-serif;
+            max-width: 540px;
+            color: #727272;
+            font-size: 17px;
+            line-height: 1.6;
+          }
+
+          button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #294b8a;
+            border-radius: 40px;
+            gap: 60px;
+            padding: 10px 13px;
+            .BtnTitle {
+              margin-left: 17px;
+              font-size: 17px;
+              color: white;
+              font-family: Manrope, sans-serif;
+            }
+            .BtnSwg {
+              padding: 10px;
+              color: #294b8a;
+              background-color: white;
+              border-radius: 100%;
+            }
+          }
+        }
+      }
+
+      .BannerMainRight {
+        @media (max-width: 1300px) {
+          width: 100%;
+        }
+        display: flex;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        overflow: hidden;
+        width: 50%;
+        .firstImg {
+          @media (max-width: 1440px) {
+            display: none;
+          }
+          width: 100%;
+          height: auto;
+        }
+        .secondImg {
+          @media (max-width: 1440px) {
+            display: block;
+          }
+          display: none;
+          width: 680px;
+          height: 456px;
+        }
+      }
+    }
+  }
 }

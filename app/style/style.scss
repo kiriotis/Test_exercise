@@ -1,5 +1,124 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
+.popUP_container {
+  background: rgba(41, 41, 41, 0.6);
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .popUP_main {
+    padding: 24px;
+    width: 456px;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #ebf0fa;
+    margin-top: 10px;
+
+    .popUP_close {
+      display: flex;
+      justify-content: flex-end;
+
+      .popUP_closeBtn {
+        width: 52px;
+        height: 52px;
+        background-color: white;
+        border-radius: 10px;
+      }
+    }
+
+    .popUP_Hero {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      .popUP_HeroTitle {
+        font-size: 24px;
+        font-family: manrope, sans-serif;
+        font-weight: 600;
+        text-shadow: 6px 6px #0000002c;
+      }
+
+      .popUP_FormWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .login {
+          padding: 24px;
+          border-radius: 10px;
+          background-color: #d7e2f6;
+          border: none;
+        }
+        .password {
+          padding: 24px;
+          border-radius: 10px;
+          background-color: #d7e2f6;
+          border: none;
+        }
+      }
+
+      .popUP_HeroRememberWrapper {
+        display: flex;
+        gap: 10px;
+        font-family: manrope, sans-serif;
+        input {
+          width: 18px;
+          height: 18px;
+        }
+
+        span {
+          font-size: 18px;
+        }
+      }
+
+      .popUP_HeroForgotWrapper {
+        a {
+          font-weight: 700;
+          font-family: manrope, sans-serif;
+          color: #244c98;
+          font-size: 20px;
+        }
+      }
+
+      .popUP_HeroBtn {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .Sign_in {
+          padding: 24px;
+          border-radius: 10px;
+          background-color: #244c98;
+          color: white;
+          border: none;
+          font-weight: 700;
+          font-family: manrope, sans-serif;
+          font-size: 18px;
+        }
+        .Register {
+          padding: 24px;
+          border-radius: 10px;
+          background-color: white;
+          color: #244c98;
+          border: 1px solid #d7e2f6;
+          font-weight: 700;
+          font-family: manrope, sans-serif;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.popUP_Disable {
+  display: none;
+}
 main {
   .Container {
     .BannerMain {

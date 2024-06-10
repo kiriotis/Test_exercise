@@ -10,9 +10,14 @@ main {
       background-color: #ebf0fa;
       border-radius: 20px;
       @media (max-width: 1300px) {
+        height: 586px;
+        display: flex;
         margin: 24px;
         flex-direction: column;
         height: auto;
+      }
+      @media (max-width: 550px) {
+        height: 482px;
       }
       .BannerMainLeft {
         margin: 72px 0px;
@@ -20,6 +25,8 @@ main {
         box-sizing: border-box;
         width: 50%;
         @media (max-width: 1300px) {
+          display: flex;
+          align-items: center;
           padding-top: 0px;
           margin: 0px;
           width: 100%;
@@ -31,14 +38,25 @@ main {
           gap: 30px;
           align-items: flex-start;
           @media (max-width: 1300px) {
-            margin: 20px;
+            gap: 25px;
+            margin: 25px;
             padding-left: 0px;
             width: 100%;
+          }
+          @media (max-width: 550px) {
+            margin-top: 17px;
+            gap: 20px;
           }
           .BannerMainLeftHeroTitle {
             font-family: Manrope, sans-serif;
             color: #294b8a;
             font-size: 30px;
+            @media (max-width: 1300px) {
+              font-size: 20px;
+            }
+            @media (max-width: 550px) {
+              font-size: 17px;
+            }
           }
 
           .BannerMainLeftHeroText {
@@ -47,6 +65,13 @@ main {
             color: #727272;
             font-size: 17px;
             line-height: 1.6;
+            @media (max-width: 1300px) {
+              font-size: 15px;
+              max-width: 640px;
+            }
+            @media (max-width: 550px) {
+              font-size: 13px;
+            }
           }
 
           button {
@@ -57,17 +82,31 @@ main {
             border-radius: 40px;
             gap: 60px;
             padding: 10px 13px;
+            @media (max-width: 1300px) {
+              font-size: 15px;
+              max-width: 640px;
+              gap: 5px;
+            }
+            @media (max-width: 550px) {
+              gap: 25px;
+            }
             .BtnTitle {
               margin-left: 17px;
               font-size: 17px;
               color: white;
               font-family: Manrope, sans-serif;
+              @media (max-width: 1300px) {
+                font-size: 15px;
+              }
             }
             .BtnSwg {
               padding: 10px;
               color: #294b8a;
               background-color: white;
               border-radius: 100%;
+              @media (max-width: 1300px) {
+                padding: 5px;
+              }
             }
           }
         }
@@ -75,6 +114,8 @@ main {
 
       .BannerMainRight {
         @media (max-width: 1300px) {
+          display: flex;
+          justify-content: center;
           width: 100%;
         }
         display: flex;
@@ -93,9 +134,34 @@ main {
           @media (max-width: 1440px) {
             display: block;
           }
+          @media (max-width: 768px) {
+            display: none;
+          }
+          @media (max-width: 550px) {
+            display: none;
+          }
           display: none;
           width: 680px;
           height: 456px;
+        }
+        .thirdImg {
+          @media (max-width: 768px) {
+            display: block;
+          }
+          @media (max-width: 550px) {
+            display: none;
+          }
+          display: none;
+          width: 720px;
+          height: 360px;
+        }
+        .fourthImg {
+          display: none;
+          @media (max-width: 550px) {
+            display: block;
+            width: 328px;
+            height: 220px;
+          }
         }
       }
     }
